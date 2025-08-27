@@ -40,7 +40,7 @@
           <img  class="w-[20px] sm:w-[30px]" src="./assets/heart.png" alt="" />
         </p>
         <p class="bg-[#41FF6B1A] flex items-center gap-1 px-4 sm:px-6 py-2 rounded-3xl font-bold text-sm sm:text-base">
-          <span>100</span>
+          <span id="credit-coin">100</span>
           <img class="w-[20px] sm:w-[30px]" src="./assets/coin.png" alt="" />
         </p>
 
@@ -86,8 +86,8 @@
 
           <div class="text-left mt-5">
             <h2 class="card-title font-bold text-2xl">National Emergency Number</h2>
-            <p class=" text-gray-500">National Emergency</p>
-            <h3 class="font-bold text-2xl mt-5">999</h3>
+            <p  class="btn.dataset.service text-gray-500">National Emergency</p>
+            <h3 class=" btn.dataset.number font-bold text-2xl mt-5">999</h3>
             <p
               class="w-[50px] h-[37px] bg-gray-300 rounded-3xl flex items-center justify-center text-sm font-medium"
             >
@@ -97,9 +97,7 @@
               <button class="btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+              <button class="call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -134,9 +132,7 @@
               <button class="btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+              <button class="call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -172,9 +168,7 @@
               <button class="btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+              <button class=" call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -211,8 +205,7 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+                class=" call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -248,9 +241,7 @@
               <button class="btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+              <button class="call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -285,21 +276,21 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700"
-              >
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white hover:bg-green-700">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
         </div>
-
-        <div class="grid row-span-4" > 
-            <div  class="flex justify-between items-center">
-                <h1>Call history </h1>
+<!-- call history -->
+        <div class="call-history grid row-span-4" > 
+            <div  class=" flex justify-between items-center">
+                <h1>Call History </h1>
             <button class="btn w-[120px] bg-[#00a63e] text-white hover:bg-green-700 rounded-3xl">
              Clear
             </button>   
             </div>
+            <ul id="call-history-list"></ul>
         </div>
     </section>
 
