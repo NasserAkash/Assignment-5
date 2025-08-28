@@ -48,13 +48,12 @@ const callHistoryList = document.getElementById("call-history-list");
 
       const entry = document.createElement("div");
       entry.className = "flex justify-between items-center bg-gray-50 p-2 rounded-lg shadow-sm";
-      entry.innerHTML = `
-        <div>
+      entry.innerHTML =
+       `<div>
           <p class="font-medium text-gray-800">${serviceName}</p>
           <p class="text-sm text-gray-500">${serviceNumber}</p>
         </div>
-        <span class="text-xs text-gray-400">${timestamp}</span>
-      `;
+        <span class="text-xs text-gray-400">${timestamp}</span>`;
 
       callHistoryList.prepend(entry);
     });
@@ -76,7 +75,7 @@ let totalCopies = 0;
       .catch(err => console.error('Failed to copy:', err));
   }
 
-  // Attach copy event listeners
+
   document.getElementById('copy-btn-1').addEventListener('click', () => {
     const number = document.querySelector('#card-1 h3').textContent;
     copyNumber(number);
@@ -102,7 +101,7 @@ let totalCopies = 0;
     copyNumber(number);
   });
 
-   document.getElementById('copy-btn-6').addEventListener('click', () => {
+   document.getElementById('copy-btn-6').addEventListener('click', () =>{
     const number = document.querySelector('#card-6 h3').textContent;
     copyNumber(number);
   });
